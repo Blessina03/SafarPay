@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "731295918998",
+    "project_id": "safarpay-39a75",
+    "storage_bucket": "safarpay-39a75.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:731295918998:android:a0544a8cdfb1aa0e94cbb7",
+        "android_client_info": {
+          "package_name": "com.example.myapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzzDFLSTJxf32R8OEm_NdZsurZEIhr1D0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

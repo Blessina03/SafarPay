@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'home.dart';
-import 'groups.dart';
+import 'package:myapp/home.dart';
+import 'package:myapp/groups.dart';
+import 'package:myapp/profile.dart';
+import 'package:myapp/activity.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -16,8 +18,8 @@ class _MainScreenState extends State<MainScreen> {
   final List<Widget> _pages = [
     const HomePage(),
     const GroupsPage(),
-    const Center(child: Text("Activity Page")),
-    const Center(child: Text("Profile Page")),
+    const ActivityPage(),
+    const ProfilePage(),
   ];
 
   final Color primaryPurple = const Color(0xFF982598);

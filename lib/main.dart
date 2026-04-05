@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:myapp/first.dart';
 import 'package:myapp/login.dart';
@@ -9,8 +10,17 @@ import 'package:myapp/groups.dart';
 import 'package:myapp/mainscreen.dart';
 import 'package:myapp/joingrp.dart';
 import 'package:myapp/viewgrp.dart';
+import 'package:myapp/activity.dart';
+import "package:myapp/profile.dart";
 
-void main() {
+
+
+Future<void> main() async {
+
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Firebase.initializeApp();
+
   runApp(SafarPayApp());
 }
 
@@ -34,6 +44,8 @@ class SafarPayApp extends StatelessWidget {
         '/groups': (context) => GroupsPage(),
         '/joingrp': (context) => JoinGroupPage(),
         '/viewgrp': (context) => ViewGroupsPage(),
+        '/activity': (context) => ActivityPage(),
+        '/profile': (context) => ProfilePage(),
          },
       );
   }
